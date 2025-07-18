@@ -1,3 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .glass-card {
+    @apply bg-opacity-20 backdrop-blur-lg border border-opacity-20 border-primary;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -11,6 +11,7 @@ import BackgroundAnimation from "@/components/BackgroundAnimation";
 import { useState } from "react";
 import "./globals.css";
 import { Box } from "@mui/material";
+import Footer from "@/components/Footer";
 
 const darkTheme = createTheme({
   palette: {
@@ -89,6 +90,7 @@ export default function ClientLayout({
           <Navbar onMenuClick={() => setSidebarOpen(true)} />
           <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
           <AnimatePresence mode="wait">{children}</AnimatePresence>
+          <Footer></Footer>
         </Box>
       </Box>
     </ThemeProvider>
